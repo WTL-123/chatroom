@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.net.Socket;
 
 /**
- * 客户端接收消息类12345
+ * 客户端接收消息类1234567890
  */
 public class Receive implements Runnable {
     private DataInputStream dis;

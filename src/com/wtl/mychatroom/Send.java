@@ -31,7 +31,7 @@ public class Send implements Runnable {
     @Override
     public void run() {
         while (isRunning){
-            String msg=getStringFromConsole();
+            String msg=ChatRoomUtils.getStringFromConsole();
             if (!msg.equals("")){
                 send(msg);
             }
@@ -46,20 +46,6 @@ public class Send implements Runnable {
             System.out.println("--3--");
             release();
         }
-    }
-
-    /**
-     * 从控制台获取消息
-     * @return
-     */
-    private String getStringFromConsole(){
-        try {
-            return console.readLine();
-        } catch (IOException e) {
-            System.out.println("--2--");
-            release();
-        }
-        return "";
     }
     //释放资源
     private void release(){

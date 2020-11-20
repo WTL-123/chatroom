@@ -12,8 +12,7 @@ public class Client {
 //创建Socket建立连接
         Socket client = new Socket("localhost", 8888);
         System.out.println("请输入用户名：");
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String name=br.readLine();
+        String name=ChatRoomUtils.getStringFromConsole();
 //客户端发送消息
         new Thread(new Send(client,name)).start();
 //客户端接收消息

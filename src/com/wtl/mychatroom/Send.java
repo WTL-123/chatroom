@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 /**
- * 客户端发送消息类
+ * 客户端发送消息
  */
 public class Send implements Runnable {
     private BufferedReader console;

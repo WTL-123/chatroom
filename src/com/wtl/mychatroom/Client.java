@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.Socket;
 
 /**
- * 在线聊天室：客户端
+ * 在线聊天室：客户端123
  */
 public class Client {
     public static void main(String[] args) throws IOException {
